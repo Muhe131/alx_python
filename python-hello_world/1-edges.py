@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 word = "Holberton"
-word_last_3 = "Hol"
-word_last_2 = "on"
-middle_word = "olberto"
-print("First 3 letters: {}".format(word_last_3))
-print("Last 2 letters: {}".format(word_last_2))
-print("Middle word: {}".format(middle_word))
+word = "Hol"
+word = "on"
+word = "olberto"
+print("First 3 letters: {}".format(word))
+print("Last 2 letters: {}".format(word))
+print("Middle word: {}".format(word))
