@@ -9,4 +9,4 @@ def fibonacci_sequence(n):
           fib_sequence = [0,  1]
           for i in range(n - 2):
                fib_sequence.append(fib_sequence[i] + fib_sequence[i + 1])
-               return fib_sequence
+     return fib_sequence
