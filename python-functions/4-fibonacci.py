@@ -1,13 +1,12 @@
 def fibonacci_sequence(n):
-     p  = 0
-     q = 1
-     n = int (input ("Enter the number of terms: "))
-     i = 2
-     list = [p, q]
-     while i<n:
-          fibo = p+q
-          list.append(fibo)
-          p = q
-          q = fibo
-          i+=1
-          print(list , end=" ")
+     if n <=0:
+          return [ ]
+     elif n == 1:
+          return [0]
+     elif n == 2:
+          return [0 , 1]
+     else:
+          fib_sequence = [0,  1]
+          for i in range(n - 2):
+               fib_sequence.append(fib_sequence[i] + fib_sequence[i + 1])
+               return fib_sequence
