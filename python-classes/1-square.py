@@ -5,7 +5,7 @@
 class Square:
     """_Defines a class of square_
     """
-    def __init__(self, size = 0):
+    def __init__(self,  size=0):
         """_initializes the new square_
 
         Args:
@@ -16,8 +16,7 @@ class Square:
             ValueError: _if size is less than zero_
         """
         if not isinstance(size, int):
-            raise TypeError("size is must be an integer")
+            raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
-#my_square = Square(3)
