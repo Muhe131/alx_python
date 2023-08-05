@@ -9,12 +9,12 @@ class Square(Rectangle):
         """ initialize an size of rectangle"""
         super().integer_validator("size", size)
         self.__size = size
-    def area(self):
         
+    def area(self):
         """ Returns the square of the rectangle """
         return self.__size * self.__size
-    def __str__(self):
 
+    def __str__(self):
         """ Returns the print() and str() representation of rectangle """
         string = "[" + str(self.__class__.__name__) + "]"
         string += str(self.__size) + "/" + str(self.__size)
