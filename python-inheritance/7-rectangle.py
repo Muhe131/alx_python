@@ -7,9 +7,9 @@ class Rectangle(BaseGeometry):
     """ A class to define a rectangle using base geometry. """
     def __init__(self, width, height):
         """ initialize a new rectangle """
-        self.integer_validator("width", width)
+        super().integer_validator("width", width)
         self.__width = width
-        self.integer_validator("height", height)
+        super().integer_validator("height", height)
         self.__height = height
     def area(self):
         """ Returns the area of the rectangle """
