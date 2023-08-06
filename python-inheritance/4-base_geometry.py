@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" An empty class """
+""" Base Geometry """
 class BaseGeometryMetaClass(type):
     """ defines base geometry class """
     def __dir__(cls):
