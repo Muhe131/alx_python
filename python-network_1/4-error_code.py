@@ -5,15 +5,15 @@ Usage: ./4-error_code.py <URL>
 """
 import sys
 import urllib.error
-import urllib.request
+import requests
 
 
 if __name__ == "__main__":
     url = sys.argv[1]
 
-    request = urllib.request.Request(url)
+    request = requests.Request(url)
     try:
-        with urllib.request.urlopen(request) as response:
+        with requests.urlopen(request) as response:
             print(response.read().decode("ascii"))
     except urllib.error.HTTPError as e:
         print("Error code: {}".format(e.code))
